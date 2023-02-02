@@ -3,15 +3,6 @@
 #   Double-Take                       Double-Take
 #   Double-Take Management Service    CoreManagementService
 
-
-
-param(
-    [switch]$local,                                            # If $local = $true, run only with local machine as host.
-    [string]$path='[Environment]::GetFolderPath("Desktop")',   # Allow for custom input file directory. Assume Desktop.
-    [string]$name='computers.txt',                              # Allow for custom input file name. Assume 'computers.txt'.
-    [string]$logSuffix=''
-)
-
 #Credential
 $username = Read-Host -Prompt "Username: "
 $password = Read-Host -Prompt "Password: "
